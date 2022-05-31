@@ -1,0 +1,589 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+@font-face {
+  font-family: Sahel;
+  src: url("/fonts/Sahel.woff") format("woff"),
+    url("../fonts/Sahel.ttf") format("ttf");
+  font-weight: normal;
+}
+
+body {
+  background-color: #fff;
+  font-family: Sahel;
+  font-size: 16px;
+  direction: rtl;
+}
+
+.text-muted {
+  color: #4d4d4d;
+}
+
+/*............. nav .............. */
+
+.nav-header {
+  background-color: #ccc;
+  height: 70px;
+  display: flex;
+  justify-content: space-around;
+  padding: 0 20px;
+}
+
+.nav-brand {
+  color: #000;
+  font-size: 30px;
+  cursor: pointer;
+}
+
+.nav-brand:hover {
+  color: #ff5722;
+}
+
+.nav-list {
+  display: inline-flex;
+  align-items: center;
+}
+
+.nav-items {
+  font-size: 20px;
+  list-style-type: none;
+  margin-right: 20px;
+  cursor: pointer;
+}
+
+.nav-items:hover {
+  color: #ff5722;
+}
+
+.join-tap30 {
+  font-size: 20px;
+  background: #ff5722;
+  border-radius: 8px;
+  margin-right: 25px;
+  padding: 10px 40px;
+}
+
+.join-tap30 a {
+  text-decoration: none;
+  color: #fff;
+}
+
+/* -------------- main-section ------------------*/
+
+.section-1 {
+  height: calc(100vh - 61px);
+  width: 100%;
+  padding-bottom: 220px;
+  position: relative;
+}
+
+.wallpaper {
+  background: url(/image/freeway-5k-4y-1920x1080.jpg) center no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 100%;
+}
+
+.mobile {
+  bottom: -15%;
+  height: 100%;
+  left: 10%;
+  position: absolute;
+}
+
+.content {
+  display: flex;
+  height: calc(100vh - 290px);
+}
+
+.content-container {
+  background-image: linear-gradient(
+    51deg,
+    rgba(23, 26, 60, 0.7) 5%,
+    rgba(23, 26, 60, 0.3) 95%
+  );
+  border-radius: 20px;
+  padding: 25px;
+  width: 528px;
+}
+
+.margin-r {
+  margin-right: 10%;
+  align-self: flex-end;
+  margin-bottom: 50px;
+}
+
+.content-title {
+  font-size: 50px;
+  color: #fff;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+.content-sub {
+  color: #fff;
+  font-size: 30px;
+  margin-bottom: 30px;
+}
+
+.intro-btn {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.intro-btn-passanger {
+  justify-content: center;
+  align-items: center;
+  width: 50%;
+}
+
+.download-btn {
+  text-decoration: none;
+  display: flex;
+  background: #fff;
+  border-radius: 12px;
+  color: #000;
+  font-size: 16px;
+  height: 56px;
+  margin: 7px;
+  padding: 16px;
+  text-align: center;
+  width: 90%;
+}
+
+.download-btn p {
+  margin-right: 10px;
+}
+
+.download-parent {
+  text-decoration: none;
+  background: transparent;
+  border: 2px solid #fff;
+  border-radius: 12px;
+  color: #fff;
+  display: flex;
+  font-size: 16px;
+  height: 56px;
+  margin: 7px;
+  padding: 16px;
+  text-align: center;
+  width: 90%;
+}
+
+.download-parent p {
+  margin-right: 10px;
+}
+
+/* ----------- services ---------------*/
+
+.services {
+  padding-top: 40px;
+  margin: 0 10%;
+}
+
+.services-title {
+  font-size: 40px;
+  font-weight: 600;
+}
+
+.services-tabs {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  overflow: auto;
+  margin: 70px 0;
+}
+
+.tabs-link {
+  flex-direction: column;
+  display: flex;
+  text-align: center;
+  max-width: 120px;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.tabs-link img {
+  filter: opacity(0.35);
+}
+
+.tabs-link img:hover {
+  filter: opacity(1);
+}
+
+.tabs-link p {
+  font-size: 17px;
+  margin-top: 15px;
+  color: #000;
+}
+
+.tab-content {
+  margin-top: 50px;
+}
+
+.tab-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.tab-about {
+  width: 50%;
+}
+
+.tab-content-img {
+  width: 40%;
+}
+
+.about-title {
+  font-size: 30px;
+  font-weight: 600;
+  margin-top: 20px;
+  padding-bottom: 18px;
+}
+
+.about-sub {
+  font-size: 18px;
+  margin-bottom: 40px;
+}
+
+/* ---------------- line -------------*/
+.line {
+  border: 1px solid #ccc;
+  width: 80%;
+  margin: auto;
+  margin-top: 100px;
+}
+
+.line-h {
+  border: 1px solid #fff;
+  height: 50px;
+  margin: 0 30px;
+}
+
+/*------------- section-corporate -------------*/
+
+.corporate {
+  padding: 60px 0;
+  margin: 0 10%;
+}
+
+.container-corporate {
+  display: flex;
+  justify-content: space-between;
+}
+
+.about-corporate {
+  width: 50%;
+}
+
+.corporate-img {
+  width: 45%;
+}
+
+.about-detail {
+  padding-bottom: 40px;
+}
+
+.about-detail a {
+  text-decoration: none;
+  color: #ff5722;
+}
+
+.detail-btn a {
+  text-decoration: none;
+  background-color: #ff5722;
+  border-radius: 12px;
+  color: #fff;
+  padding: 15px 20px;
+  text-align: center;
+}
+
+/* --------------- parallax ------------ */
+
+#parallax-wallpaper {
+  background: url(/image/parallax.jpeg);
+  background-attachment: fixed;
+  background-size: cover;
+  height: 200px;
+  padding: 20px 10%;
+  margin: 50px 0;
+}
+
+.container {
+  height: 100%;
+}
+
+.parallax-content {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  height: 100%;
+}
+
+.content-col {
+  width: 24.5%;
+  text-align: center;
+}
+
+.content-col:hover p {
+  display: block;
+}
+
+.parallax-title {
+  font-size: 25px;
+  font-weight: 600;
+  color: #fff;
+}
+
+.parallax-sub {
+  font-size: 18px;
+  font-size: 600;
+  color: #fff;
+  margin-top: 20px;
+  display: none;
+}
+
+/* ----------- drivers -------------*/
+
+.drivers {
+  padding: 40px 0;
+  margin: 0 10%;
+}
+
+.container-dirvers {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.content-dirvers {
+  width: 50%;
+}
+
+.drive-photo {
+  width: 45%;
+}
+.drive-photo img {
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.drivers-title {
+  font-size: 35px;
+  font-weight: 700;
+  margin-bottom: 30px;
+}
+
+.description {
+  font-size: 18px;
+  margin-bottom: 20px;
+}
+
+.sub-title {
+  font-size: 22px;
+  font-weight: 600;
+  margin-top: 20px;
+  margin-bottom: 40px;
+}
+
+.sub-link a {
+  color: #0065dc;
+  text-decoration: none;
+}
+
+.description-list ul {
+  list-style-type: none;
+  line-height: 40px;
+}
+
+.drivers-btn {
+  display: flex;
+  align-items: center;
+  margin-top: 30px;
+}
+
+.drivers-btn a {
+  margin-left: 20px;
+  text-decoration: none;
+  display: flex;
+  background-color: #0065dc;
+  color: #fff;
+  align-items: center;
+  font-size: 18px;
+  height: 56px;
+  padding: 5px 15px;
+  justify-content: center;
+  border-radius: 12px;
+  white-space: nowrap;
+}
+
+/*---------- Blog-Post ------------*/
+
+.blog-container {
+  padding: 8% 10%;
+  width: 100%;
+}
+
+.blog-title {
+  font-size: 35px;
+  font-weight: 700;
+  margin-bottom: 50px;
+}
+
+.posts {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.posts a {
+  text-decoration: none;
+  padding: 25px;
+  width: 33%;
+}
+
+.posts-img {
+  width: 100%;
+  border-radius: 12px;
+}
+
+.sub-title {
+  font-size: 22px;
+  margin-top: 20px;
+}
+
+.posts p {
+  color: #000;
+  font-size: 18px;
+  text-align: justify;
+}
+
+/* ------------------ City ----------- */
+
+.cities {
+  background: #f8f8f9 url(/image/map-back.svg) no-repeat;
+  height: 45vh;
+  padding: 40px 10%;
+}
+
+.title {
+  font-size: 40px;
+  font-weight: 600;
+  margin-bottom: 20px;
+}
+
+.city-list {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.city {
+  font-size: 18px;
+  margin-bottom: 18px;
+  width: 12%;
+}
+
+.name {
+  font-size: 18px;
+}
+
+.en-name {
+  font-size: 18px;
+}
+
+/* ------------ footer ------------- */
+
+#footer {
+  background: #000;
+  height: 50vh;
+  padding: 5% 10%;
+  color: #fff;
+}
+
+.footer-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.brand-col {
+  display: flex;
+  flex-direction: column;
+  margin-left: 20px;
+  width: 15%;
+}
+
+.footer-logo {
+  height: 30px;
+  margin-bottom: 20px;
+}
+
+.brand-title {
+  margin-bottom: 25px;
+  font-size: 12px;
+}
+
+.brand-sub {
+  font-size: 15px;
+  line-height: 30px;
+}
+
+.footer-col {
+  display: flex;
+  flex-direction: column;
+  margin-left: 20px;
+}
+
+.footer-title {
+  font-size: 18px;
+  font-weight: 800;
+  margin-bottom: 15px;
+}
+
+.foot-link {
+  line-height: 30px;
+  text-decoration: none;
+  color: #fff;
+}
+
+.foot-link:hover {
+  color: #ff5722;
+}
+
+.trust-col {
+  display: flex;
+  flex-direction: row;
+  max-width: 26%;
+}
+
+.trust-logo {
+  background-color: #fff;
+  margin-left: 15px;
+  display: flex;
+  align-items: center;
+  border-radius: 15px;
+  cursor: pointer;
+}
+
+.social-title {
+  margin-top: 40px;
+}
+
+.social ul {
+  display: flex;
+  justify-content: space-around;
+  list-style-type: none;
+  font-size: 30px;
+  cursor: pointer;
+}
+
+.social-item:hover {
+  color: #ff5722;
+}
